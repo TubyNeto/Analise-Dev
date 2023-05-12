@@ -6,8 +6,8 @@ df_amostra.drop(axis=1, inplace=True, columns=['Unnamed: 0'])
 
 st.set_page_config(page_title="My App",layout='wide')
 
-st.markdown("<h1 style='text-align: center; color: white;'>Régua Ótima de Atração</h1>", unsafe_allow_html=True)
-st.markdown("<h2 style='text-align: center; color: white;'>Métricas Relacionadas a interações com SMS de Atração</h2>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: black;'>Régua Ótima de Atração</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: black;'>Métricas Relacionadas a interações com SMS de Atração</h2>", unsafe_allow_html=True)
 
 #st.dataframe(df_amostra.head(n=5))
 
