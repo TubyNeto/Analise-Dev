@@ -172,7 +172,7 @@ with col7:
 
 with col8:
     st.subheader('Ordenação pelo percentual de acordos:')
-    df8 = UF_idade_analise_df.sort_values(by=['Porcentagem'], ascending=False)[UF_idade_analise_df.sort_values(by=['Porcentagem'] , ascending=False)['Acordos'] >= 100]
+    df8 = UF_idade_analise_df.sort_values(by=['Porcentagem'], ascending=False)[UF_idade_analise_df.sort_values(by=['Porcentagem'] , ascending=False)['Acordos'] >= 70]
     df8 = df8.head(n=15)
     st.dataframe(df8)
     st.bar_chart(data = plotagem8)
