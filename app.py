@@ -1,5 +1,4 @@
 import streamlit as st
-import matplotlib.pyplot as plt
 import pandas as pd 
 
 df_amostra = pd.read_csv('df_amostra.csv')
@@ -124,15 +123,17 @@ with col5:
     df5 = generos_analise_df.sort_values(by='Ocorrências', ascending=False)
     df5 = df5.head(n=15)
     st.dataframe(df5)
+    
+    st.image('grafico_pizza.png')
 
-    labels = plotagem5.index
-    sizes = plotagem5
+    #labels = plotagem5.index
+    #sizes = plotagem5
 
-    fig1, ax1 = plt.subplots()
-    ax1.pie(sizes, labels=labels, autopct='%1.1f%%')
-    ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    #fig1, ax1 = plt.subplots()
+    #ax1.pie(sizes, labels=labels, autopct='%1.1f%%')
+    #ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
-    st.pyplot(fig1)
+    #st.pyplot(fig1)
 
 with col6:
     st.subheader('Ordenação pelo percentual de acordos:')
